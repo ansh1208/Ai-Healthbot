@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI HealthBot Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🩺 AI Healthbot</h1>
+  </header>
+
+  1
+  <main class="chat-container">
+    <div class="chat-bubble user">
+      hi, actually i had fever last night and little cough and running nose what medicines should i take to cure it
+    </div>
+
+    <div class="chat-bubble bot">
+      I can provide general information about medications. What specific medication would you like to know about?
+    </div>
+
+    <div class="topics">
+      <button>🍎 Nutrition</button>
+      <button>🏃‍♂ Exercise</button>
+      <button>🧠 Mental Health</button>
+      <button>🌙 Sleep</button>
+      <button>💊 Medications</button>
+      <button>🆘 First Aid</button>
+      <button>👨‍⚕ Find Doctors</button>
+      <button>🔎 Medicine Info</button>
+    </div>
+
+    <form action="/predict" method="POST" class="input-area">
+      <input type="text" name="symptoms" placeholder="Type your health question..." required>
+      <button type="submit">➤</button>
+    </form>
+  </main>
+</body>
+</html>
